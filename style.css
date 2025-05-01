@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+.container {
+    max-width: 375px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.first img {
+    width: 100%;
+    height: 275px;
+    border-radius: 10px 10px 0 0;
+}
+.glass {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: hsla(277, 89%, 30%, 0.5);
+    height: 275px;
+    position: absolute;
+}
+.second {
+    padding: 20px;
+    text-align: center;
+}
+.second h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 2.3em;
+    
+    margin: 5px;
+}
+h2 span {
+    color: hsl(277, 64%, 61%);
+}
+.second > p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: 1.2em;
+    margin: 10px;
+    line-height: 1.5;
+}
+section{
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+section div {
+    margin-bottom: 20px;
+}
+.amount {
+    margin: 5px;
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+}
+.value {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca';
+}
+@media(min-width:650px){
+    body {
+        height: 100vh;
+        gap: 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        height: 500px;
+    }
+    .second {
+        grid-area: 1/1/2/2;
+        padding: 30px;
+        text-align: left;
+    }
+    .second h2 {
+        margin-right: 10px;
+    }
+    .second > p {
+        margin: 30px 20px 50px 0; 
+    }
+    section {
+        display: flex;
+        gap: 20px;
+    }
+    .first img {
+        border-radius: 0 10px 10px 0;
+        height: 500px;
+    }
+    .glass{
+        height: 500px;
+        max-width: 400px;
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+}
+@media(min-width:1200px){
+    .container {
+        max-width: 1440px;
+        height: 600px;
+    }
+    .second {
+        padding: 80px;
+    }
+    .second h2 {
+        font-size: 3.2em;
+        margin-right: 30px;
+    }
+    .second > p {
+        margin: 30px 120px 50px 0;    line-height: 2;
+    }
+    section {
+        gap: 70px;
+    }
+    .first img {
+        height: 600px;
+    }
+    .glass{
+        max-width: 720px;
+        height: 600px;
+    }
+    
+}
